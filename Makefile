@@ -2,10 +2,12 @@ NAME = Minishell
 
 SRCS = main.c
 
-CC = gcc -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
+
+CC = gcc 
 
 $(NAME): $(SRCS.c = SRCS.o)
-	$(CC) $(SRCS) -o $(NAME)
+	$(CC) $(CFLAGS) $(SRCS) -o $(NAME)
 
 all: $(NAME)
 
